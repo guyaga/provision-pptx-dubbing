@@ -1,0 +1,41 @@
+{
+    "project_dir": "./my_dubbing_project",
+
+    "source_pptx": "input/original.pptx",
+    "translated_pptx": "translated/translated.pptx",
+    "exported_video": "video/exported.mp4",
+    "frames_dir": "video/frames",
+    "narration_dir": "narration",
+    "output_dir": "output",
+
+    "target_language": "Spanish",
+    "target_duration_seconds": null,
+
+    "gemini_api_key": "YOUR_GEMINI_API_KEY",
+    "gemini_model_translation": "gemini-2.0-flash",
+    "gemini_model_vision": "gemini-3.1-pro",
+
+    "elevenlabs_api_key": "YOUR_ELEVENLABS_API_KEY",
+    "elevenlabs_voice_id": "YOUR_VOICE_ID",
+    "elevenlabs_model_id": "eleven_multilingual_v2",
+    "elevenlabs_voice_settings": {
+        "stability": 0.5,
+        "similarity_boost": 0.75,
+        "style": 0.0,
+        "use_speaker_boost": true
+    },
+
+    "frame_extraction_interval": 0.5,
+    "frame_batch_size": 20,
+
+    "max_slide_duration_ratio": 2.0,
+    "min_slide_padding_seconds": 0.5,
+    "max_narration_speedup": 1.1,
+
+    "video_export_resolution": "1920x1080",
+    "video_export_fps": 30,
+    "animation_delay_override_seconds": 0.1,
+
+    "ffmpeg_path": "ffmpeg",
+    "ffprobe_path": "ffprobe"
+}
